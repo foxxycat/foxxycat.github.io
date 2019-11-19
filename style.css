@@ -34,3 +34,12 @@ h3 {
     margin-top: 64px;
     text-align: center;
 }
+.contacts {
+    margin: 2rem;
+    margin-bottom: auto;
+    display: block;
+    vertical-align: middle;
+}
+.cont-href {
+    margin-left: 0.5rem;
+}
