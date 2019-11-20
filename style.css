@@ -34,6 +34,9 @@ h3 {
     margin-top: 64px;
     text-align: center;
 }
+.card {
+    margin-top: 2rem;
+}
 .contacts {
     margin: 2rem;
     margin-bottom: auto;
