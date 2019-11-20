@@ -38,6 +38,9 @@ h3 {
     margin: auto;
     margin-top: 2rem;
 }
+.jumbotron {
+    padding: auto;
+}
 .contacts {
     margin: 2rem;
     margin-bottom: auto;
