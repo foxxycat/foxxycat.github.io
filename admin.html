@@ -11,12 +11,26 @@
 		<div class="row">
 			<div class="col-md-6">
 				<h1>Добавление сертификата</h1>
-				<input type="text" name="" placeholder="Название"><br>
-				<input type="text" name="" placeholder="Ссылка">
-				<button>Загрузить</button>
+				<input type="text" name="" placeholder="Название" id="certName"><br>
+				<input type="text" name="" placeholder="Ссылка" id="hrefCert"><br>
+				<input type="text" name="" placeholder="Год" id="yearCert"><br>
+				<button id="certButton">Загрузить</button>
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		$("#certButton").on("click", function(){
+			let name = $("#certName").val();
+			let href = $("#hrefCert").val();
+			let year = $("#yearCert").val();
+			if (name, href, year != "") {
+				alert("Clicked!");
+			}
+			else{
+				alert("Поля пустые!");
+			}
+		});
+	</script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
