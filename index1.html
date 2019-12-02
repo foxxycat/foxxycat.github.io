@@ -798,8 +798,10 @@ a.tg {
 			if ($(this).attr('class') === 'mobile-nav-icon') {
 				$('.mobile-nav').toggleClass('active');
 			} else {
-                $('.mobile-search').css('display','block');
 				$('.mobile-search').toggleClass('active');
+                if ($(this).classList.contains('active')) {
+                    $('.mobile-search').css('display','block');
+                }
 			}
 			
 		});
