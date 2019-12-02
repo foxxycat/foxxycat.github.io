@@ -796,13 +796,10 @@ a.tg {
 
 		$('.mobile-nav-icon, .mobile-search-icon').click(function(){
 			if ($(this).attr('class') === 'mobile-nav-icon') {
-				$('.mobile-nav').toggleClass('active');
+				$(this).toggleClass('active');
 			} else {
-                if ($('.mobile-search').classList.contains('active')) {
-                    $('.mobile-search').css('display','block');
-                }
-				$('.mobile-search').toggleClass('active');
-                
+				$(this).toggleClass('active');
+                $(this).css('display','block')
 			}
 			
 		});
