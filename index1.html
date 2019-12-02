@@ -796,10 +796,10 @@ a.tg {
 
 		$('.mobile-nav-icon, .mobile-search-icon').click(function(){
 			if ($(this).attr('class') === 'mobile-nav-icon') {
-				$(this).toggleClass('active');
+				$('.mobile-nav').toggleClass('active');
 			} else {
-				$(this).toggleClass('active');
-                $(this).css('display','block')
+				$('.mobile-search').toggleClass('active');
+                $('.mobile-search').css('display','block')
 			}
 			
 		});
