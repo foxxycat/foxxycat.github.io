@@ -67,19 +67,9 @@ body {
 .mobile-nav.active {
     transform: translateX(100%);
 }
-.mobile-search {
-        position: absolute;
-        right: -50%;
-        top: 0;
-        width: 50%;
-        background-color: #00a6b7;
-        z-index: 9;
-        transition: transform 0.2s ease;
-        margin-top: 150px;
-        padding: 20px;
-    }
 .mobile-search.active {
-
+    display: block;
+    right: -50%;
     transform: translateX(-100%);
 }
 .header-menu li {
@@ -473,17 +463,16 @@ a.tg {
         padding: 20px;
     }
     .mobile-search {
-      /*  display: block;
+      /*  display: block;*/
         position: absolute;
-        /*right: -50%;
+        /*right: -50%;*/
         top: 0;
         width: 50%;
         background-color: #00a6b7;
         z-index: 9;
         transition: transform 0.2s ease;
         margin-top: 150px;
-        padding: 20px;*/
-        display: block;
+        padding: 20px;
     }
     .up-button {
        margin: 0;
