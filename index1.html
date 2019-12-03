@@ -68,7 +68,6 @@ body {
     transform: translateX(100%);
 }
 .mobile-search.active {
-    /*display: block;*/
     transform: translateX(-100%);
 }
 .header-menu li {
@@ -773,8 +772,6 @@ a.tg {
     </footer>
 	<script src="jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script>
-        $('.mobile-search').hide();
-
 		$('.map-menu a').on('click, mouseenter', function(){
 			var ch = $('.col-district-list, .col-regions-list').children();
 			var id = $(this).attr('class');
