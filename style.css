@@ -47,3 +47,7 @@ h3 {
 .cont-href {
     margin-left: 0.5rem;
 }
+
+.card-img {
+    height: 200px;
+}
