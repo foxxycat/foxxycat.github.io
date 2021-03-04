@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  background-image: url(./items/img/header-bg.png);
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+
+.header .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "header-logo header-title" "header-menu header-menu";
+}
+
+.header-logo {
+  grid-area: header-logo;
+}
+
+.header-logo img {  
+  border-radius: 125px;
+  max-width: 275px;
+}
+
+.header-title {
+  grid-area: header-title;
+  text-align: right;
+  align-self: center;
+  font-size: 24pt;
+  color: white;
+}
+
+.header-menu {
+  grid-area: header-menu;
+  justify-self: center;
+  margin: 10px 0px 10px 0px;
+}
+
+.header-menu-ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(12, auto);
+  grid-gap: 25px;
+  /* display: flex; */
+}
+
+.header-menu-ul span {
+  color: white;
+}
+
+.header-menu-ul-li {
+  /* margin-right: 25px; */
+}
+
+.header-menu-ul-li a {
+  text-decoration: none;
+  /* display: block; */
+  color: rgb(235, 235, 235);
+  font-weight: 500;
+}
+
+.header-menu-ul-li a:hover {
+  color: #fff;
+  font-weight: 501;
+}
